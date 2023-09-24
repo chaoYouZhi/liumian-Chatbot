@@ -95,7 +95,7 @@ func LoadConfig(cfg string) *Config {
 		AccessControlEnable:                getViperBoolValue("ACCESS_CONTROL_ENABLE", false),
 		AccessControlMaxCountPerUserPerDay: getViperIntValue("ACCESS_CONTROL_MAX_COUNT_PER_USER_PER_DAY", 0),
 		OpenAIHttpClientTimeOut:            getViperIntValue("OPENAI_HTTP_CLIENT_TIMEOUT", 550),
-		OpenaiModel:                        getViperStringValue("OPENAI_MODEL", "gpt-3.5-turbo-instruct-0914"),
+		OpenaiModel:                        getViperStringValue("OPENAI_MODEL", "gpt-3.5-turbo-16k-0613"),
 	}
 
 	return config
